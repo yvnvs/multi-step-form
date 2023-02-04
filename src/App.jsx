@@ -1,11 +1,12 @@
 import { useState } from 'react'
-
+import MultiStepForm from "./components/multi-step-form/index"
+import Step1 from "./components/step-1"
 function App() {
 
   return (
-    <div className="App">
-  App
-    </div>
+  <>
+  <MultiStepForm/>
+  </>
   )
 }
 
