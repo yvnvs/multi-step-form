@@ -45,7 +45,7 @@ function MultiStepForm(){
 
     return(
         <S.MultiStepForm>
-            <Sidebar></Sidebar>
+            <Sidebar activeStep={activeStep}></Sidebar>
             <ActiveStep {...Steps[activeStep]}></ActiveStep>
         </S.MultiStepForm>
     )
