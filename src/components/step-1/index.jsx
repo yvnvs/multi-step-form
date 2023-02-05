@@ -1,8 +1,15 @@
+import { useState } from "react";
+import Step from "../step"
+
+ 
 
 
-function Step1(){
+function Step1(props){
+    console.log(props)
     return (
-        <div> Step1 </div>
+        <Step {...props}>
+             Step1
+         </Step>
     )
 }
 
