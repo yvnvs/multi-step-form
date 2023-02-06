@@ -1,8 +1,45 @@
+import React, {useState} from "react"
 import Step from "../step"
 
-function Step3(props){
+import FormJSON from "../../../form.json"
+
+import * as S from "./styled"
+
+const { step3 } = FormJSON;
+
+function Step3(props) {
+const [selectedAddons, setSelectedAddons] = useState([])
+
+    const billingType = "monthly";
+
+    const changeSelectedAddons = (checked,selectedAddon)=>{
+        if(checked){
+            setSelectedAddons([...selectedAddons, selectedAddon]);
+        }else{
+            setSelectedAddons(
+                selectedAddons.filter((addon) => addon.id !== selectedAddon.id)
+            );
+        }
+        console.log(checked,selectedAddon);
+    }
+
+    const checkSelected = (id)=> selectedAddons.some((i) => i.id ===id);
     return (
-        <Step {...props}> Step 3 </Step>
+        <Step {...props}>
+            <S.Step3>
+                {step3[billingType].map((item)=>
+                (<S.Item key={item.id} isSelected = {checkSelected(item.id)}>
+                    <S.Input type="checkbox" onChange={(e)=> changeSelectedAddons(e.target.checked,item)} />
+                    <S.InputBody>
+                        <S.Title>{item.title}</S.Title>
+                        <S.Subtitle>{item.description}</S.Subtitle>
+                    </S.InputBody>
+                    <S.Price>{item.price}</S.Price>
+                </S.Item>))}
+            </S.Step3>
+
+
+        </Step>
     )
 }
 

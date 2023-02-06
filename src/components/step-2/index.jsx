@@ -2,9 +2,6 @@ import { useState } from "react"
 import Step from "../step"
 import FormJSON from "../../../form.json"
 
-import ArcadeIcon from "../../assets/icon-arcade.svg"
-import AdvancedIcon from "../../assets/icon-advanced.svg"
-import ProIcon from "../../assets/icon-pro.svg"
 
 import * as S from "./styled"
 
