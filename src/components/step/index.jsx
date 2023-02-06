@@ -18,7 +18,11 @@ function Step({
             <S.Body>{children}</S.Body>
             <S.StepFooter>
                 {hasBackButton && <S.GoBackButton onClick={handleBack} >Go Back</S.GoBackButton>}
-                {hasNexButton && <S.GoNextButton type="submit">Next Step</S.GoNextButton>}
+                {hasNexButton ? 
+                    (<S.GoNextButton type="submit">Next Step</S.GoNextButton>)
+                :   
+                    (<S.GoNextButton type="submit">Confirm</S.GoNextButton>)
+                }
             </S.StepFooter>
         </S.Step>
     )
