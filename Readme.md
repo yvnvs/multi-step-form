@@ -7,7 +7,7 @@
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://wondrous-swan-91830f.netlify.app/)
+- Live Site URL: [](https://wondrous-swan-91830f.netlify.app/)
 
 ## My process
 
@@ -26,5 +26,5 @@
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@yvnvs](https://www.frontendmentor.io/profile/yvnvs)
 
