@@ -7,7 +7,7 @@
 
 ### Links
 
-- Live Site URL: [](https://wondrous-swan-91830f.netlify.app/)
+- Live Site URL: [](https://wondrous-swan-91830f.netlify.app/) https://wondrous-swan-91830f.netlify.app/
 
 ## My process
 
